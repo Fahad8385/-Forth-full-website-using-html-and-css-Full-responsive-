@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Goole Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Icons File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Own Framework -->
+    <link rel="stylesheet" href="css/own-framework.css">
+    <!-- Main File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page d-flex">
+        <!-- Start Slidbar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h2 class="p-relative mb-20 txt-c upper-trans">aljarwani</h2>
+            <ul>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="dashboard.html">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex p-10 rad-6 align-c capi-trans" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex p-10 rad-6 align-c capi-trans" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Slidbar -->
+        <div class="content w-full flow-hidden">
+            <!-- Start Head -->
+            <div class="head p-20 f-between bg-white">
+                <div class="search p-relative">
+                    <input class="p-10 rad-6" type="search" placeholder="type a keywords">
+                </div>
+                <div class="icons d-flex align-c">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="images/avatar.png" alt="avatar">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="heading-content capi-trans p-relative"><span>sett</span>ings</h1>
+            <div class="settings-page m-20 d-grid gap-20">
+                <!-- Start Site-Control Widget -->
+                <div class="site-control bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">site control</h2>
+                    <span class="capi-trans c-grey mb-20 d-block">control the website if there is maintenance</span>
+                    <div class="cont f-between mb-20">
+                        <div class="text">
+                            <h4 class="capi-trans mb-10">website control</h4>
+                            <span class="capi-trans c-grey">open / close website and type the reason</span>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <textarea class="w-full p-10 rad-6" placeholder="close message content"></textarea>
+                </div>
+                <!-- End Site-Control Widget -->
+
+                <!-- Start General-Info Widget -->
+                <div class="general-info bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">general info</h2>
+                    <span class="capi-trans c-grey mb-20 d-block">general information about your account</span>
+                    <form>
+                        <label class="capi-trans c-grey mb-10 d-block" for="first-name">first name</label>
+                        <input class="p-10 d-block w-full rad-6 fs-14 mb-15" type="text" placeholder="first name" id="first-name" value="Fahad">
+                        <label class="capi-trans c-grey mb-10 d-block" for="last-name">last name</label>
+                        <input class="p-10 d-block w-full rad-6 fs-14 mb-15" type="text" placeholder="last name" id="last-name" value="AlJarwani">
+                        <div>
+                            <label class="capi-trans c-grey d-block mb-10" for="email">email</label>
+                            <input class="email p-10 d-block rad-6 fs-14 mr-5" value="fahadalgroany@gmail.com" type="email" id="email" disabled>
+                            <a class="capi-trans btn-shape bg-blue c-white" href="#">change</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- End General-Info Widget -->
+
+                <!-- Start Security-Info Widget -->
+                <div class="security-info bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">security info</h2>
+                    <span class="capi-trans c-grey d-block mb-20">security information about your account</span>
+                    <div class="security-info-row f-between mb-20 pb-20">
+                        <div class="info">
+                            <h4 class="capi-trans mb-10">password</h4>
+                            <span class="last capi-trans c-grey d-block fs-14">last change on 25/10/2022</span>
+                        </div>
+                        <a class="capi-trans btn-shape bg-blue c-white" href="#">change</a>
+                    </div>
+                    <div class="security-info-row f-between mb-20 pb-20">
+                        <div class="info">
+                            <h4 class="capi-trans mb-10">two-factor authentication</h4>
+                            <span class="last capi-trans c-grey d-block fs-14">enable / disable the feature</span>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="security-info-row f-between">
+                        <div class="info">
+                            <h4 class="capi-trans mb-10">devices</h4>
+                            <span class="last capi-trans c-grey d-block fs-14">check the login devices list</span>
+                        </div>
+                        <a class="capi-trans btn-shape bg-eee" href="#">devices</a>
+                    </div>
+                </div>
+                <!-- End Security-Info Widget -->
+
+                <!-- Start Social-Info Widget -->
+                <div class="social-info bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">social info</h2>
+                    <span class="capi-trans c-grey mb-20 d-block">social media information</span>
+                    <form>
+                        <div class="box p-relative">
+                            <input class="fs-12 b-1px-ccc w-full rad-6 bg-eee p-10 mb-20" type="text" placeholder="twitter username">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="box p-relative">
+                            <input class="fs-12 b-1px-ccc w-full rad-6 bg-eee p-10 p-relative mb-20" type="text" placeholder="facebook username">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="box p-relative">
+                            <input class="fs-12 b-1px-ccc w-full rad-6 bg-eee p-10 p-relative mb-20" type="text" placeholder="linkedin username">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="box p-relative">
+                            <input class="fs-12 b-1px-ccc w-full rad-6 bg-eee p-10 p-relative mb-20" type="text" placeholder="youtube username">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Social-Info Widget -->
+
+                <!-- Start Widgets-Control Widget -->
+                <div class="widgets-control bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">widgets control</h2>
+                    <span class="capi-trans c-grey d-block mb-20">show / hide the widgets</span>
+                    <div class="container-control d-flex gap-80 direction-column-mobile">
+                        <div class="slide">
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="one" checked>
+                                <label class="capi-trans" for="one">quick draft</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="two" checked>
+                                <label class="capi-trans" for="two">yearly targets</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="three" checked>
+                                <label class="capi-trans" for="three">tickets statistics</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="four">
+                                <label class="capi-trans" for="four">lastest news</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="five" checked>
+                                <label class="capi-trans" for="five">lastest tasks</label>
+                            </div>
+                            <div class="control d-flex align-c">
+                                <input type="checkbox" id="six" checked>
+                                <label class="capi-trans" for="six">top search items</label>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="seven" checked>
+                                <label class="capi-trans" for="seven">welcome</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="eight">
+                                <label class="capi-trans" for="eight">lastest uploads</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="nine" checked>
+                                <label class="capi-trans" for="nine">project progress</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="ten">
+                                <label class="capi-trans" for="ten">reminders</label>
+                            </div>
+                            <div class="control d-flex align-c mb-15">
+                                <input type="checkbox" id="eleven">
+                                <label class="capi-trans" for="eleven">lastest post</label>
+                            </div>
+                            <div class="control d-flex align-c">
+                                <input type="checkbox" id="twelve">
+                                <label class="capi-trans" for="twelve">social media</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Widgets-Control Widget -->
+
+                <!-- Start Backup-Management -->
+                <div class="backup-management bg-white rad-6 p-20">
+                    <h2 class="capi-trans mb-10">backup management</h2>
+                    <span class="d-block c-grey mb-20 capi-trans">control backup time and location</span>
+                    <div class="control d-flex align-c mb-15">
+                        <input type="radio" id="daily" name="time">
+                        <label class="capi-trans" for="daily">daily</label>
+                    </div>
+                    <div class="control d-flex align-c mb-15">
+                        <input type="radio" id="weekly" name="time">
+                        <label class="capi-trans" for="weekly">weekly</label>
+                    </div>
+                    <div class="control d-flex align-c mb-15">
+                        <input type="radio" id="monthly" name="time"checked>
+                        <label class="capi-trans" for="monthly">monthly</label>
+                    </div>
+                    <div class="servers d-flex align-c txt-c">
+                        <input type="radio" name="server" id="megaman">
+                        <div class="server w-full rad-6 mb-10">
+                            <label class="d-block p-20" for="megaman">
+                                <i class="fa-solid fa-network-wired d-block mb-5"></i>
+                                <span class="capi-trans d-block">megaman</span>
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="zero">
+                        <div class="server w-full rad-6 mb-10">
+                            <label class="d-block p-20" for="zero">
+                                <i class="fa-solid fa-circle-nodes d-block mb-5"></i>
+                                <span class="capi-trans d-block">zero</span>
+                            </label>
+                        </div>
+                        <input type="radio" name="server" id="sigma" checked>
+                        <div class="server w-full rad-6 mb-10">
+                            <label class="d-block p-20" for="sigma">
+                                <i class="fa-solid fa-diagram-project d-block mb-5"></i>
+                                <span class="capi-trans d-block">sigma</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Gackup-Management -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
